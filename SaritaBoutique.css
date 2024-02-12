@@ -2,6 +2,30 @@
     margin:0;
     padding:0;
 }
+
+.bgslides{
+    width: 20%;
+    height: 250px ;
+    display:flex;
+    gap: 5px;
+    margin-inline-start:45%;
+    margin-inline-end: 35%;
+
+}
+.bgslides img{
+    width: 20%;
+    height:100%;
+    aspect-ratio:  1/2;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.bgslides img:hover{
+    width: 35%;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
 .container{
     margin: 25px;
     text-align: center;
@@ -41,10 +65,8 @@ h3{
     font-family: 'modernline';
     font-size:200px;
 
-
-
-
 }
+
 p{
     font-stretch: wider;
     font-size: xx-large;
@@ -119,7 +141,7 @@ ul.sidenav li a:hover:not(.active) {
 div.content {
     margin-left: 25%;
     padding: 1px 16px;
-    height: 1000px;
+    height: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -203,19 +225,35 @@ li.dropdown {
 .Golu{
     width:350px; 
     height: 450px;
-    padding: 10%;
+    padding-left: 0%;
+    padding-right: 12%;
+    border-radius: 35%;
 }
 
 .element {
     border: 1px solid #000000;
 }
 h2{
-    padding-inline-start: 25%;
+    text-align: center;
+    justify-content: center;
 
 }
 
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+.sizing1{
+    padding-left: 5% ;
+    padding-right: 5%;
+    padding-bottom: 7%;
+    
+}
+.sizing2 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 7%;
+}
+
+
 
 
 
@@ -228,7 +266,7 @@ h2{
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .card .image-box {
@@ -267,32 +305,34 @@ h2{
 }
 
 .content {
-    width: 100%;
+    width: 80%;
+    font-size:45px;
     /* Change to 100% */
-    height: 100%;
+    height: 300%;
     /* Add this line */
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align:center;
-    color: #f9f9f9;
+    color: #cfb53b;
 
     /* Change to none */
 }
 
 .card:hover .content {
-    display: flex;
+    display:flex;
     /* Change to flex */
-    align-items: center;
+    align-items:center;
     /* Add this line */
-    justify-content: center;
+    justify-content:center;
     /* Add this line */
 }
 
 .content p {
     opacity: 0;
     transition: 0.4s 0.2s ease;
+    align-content: center;
 }
 
 .card:hover .content p {
